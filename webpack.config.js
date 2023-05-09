@@ -17,7 +17,7 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: "./src/json", to: "json" },
+        { from: "./src/js/json", to: "json" },
         { from: "./src/svg", to: "svg" },
       ],
     }),
