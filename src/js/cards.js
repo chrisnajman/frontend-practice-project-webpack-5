@@ -1,5 +1,3 @@
-// import "../json/cards.json"
-
 async function cards() {
   const URL_CARDS = "./json/cards.json"
   const cardsContainer = document.querySelector("[data-cards-container]")
