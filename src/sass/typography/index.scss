@@ -1,0 +1,18 @@
+/*
+    Note: path to font is from style.scss
+*/
+
+/* Light: 300 */
+@font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    src: url("../fonts/roboto-light-webfont.woff2") format("woff2"),
+        url("../fonts/roboto-light-webfont.woff") format("woff");
+}
+/* Regular: 400 */
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"),
+        url("../fonts/roboto-regular-webfont.woff") format("woff");
+}

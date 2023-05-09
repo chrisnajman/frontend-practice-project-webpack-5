@@ -1,0 +1,25 @@
+.search-engine {
+    display: var(--flex);
+    max-width: 45rem;
+    margin: var(--horz-center);
+    border: 1px solid var(--dark);
+    border-radius: 0.2rem;
+    box-shadow: var(--shadow);
+    background-color: var(--light);
+    font-size: var(--font-large);
+
+    input {
+        flex-grow: 1;
+        padding: 1rem 0 1rem 1rem;
+        border: 0;
+    }
+
+    button {
+        padding: 0 1rem;
+        border: 0;
+
+        &:hover {
+            color: var(--blue);
+        }
+    }
+}

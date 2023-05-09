@@ -1,0 +1,184 @@
+// Ensure footer always at bottom
+.page-wrapper {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: var(--flex);
+    flex-direction: column;
+    align-items: stretch;
+
+    header,
+    main,
+    footer {
+        flex-shrink: 0;
+    }
+    main {
+        flex-grow: 1;
+    }
+}
+
+// Other
+/* header */
+.page-header {
+    background-color: var(--mid);
+
+    &-inner {
+        display: var(--flex);
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: var(--dark);
+        font-size: var(--font-large);
+        font-weight: var(--fontWeight-medium);
+    }
+}
+.nav-top {
+    display: var(--flex);
+    align-items: center;
+    gap: 1rem;
+
+    a {
+        color: var(--light);
+    }
+
+    .icon-logo {
+        vertical-align: middle;
+    }
+}
+
+.header-inner {
+    padding: 3rem 1rem;
+}
+@media screen and (min-width: 760px) {
+    .header-inner {
+        padding: 7rem 0 7rem 0;
+    }
+}
+
+/* article */
+.page-content {
+    padding: 3rem 1rem;
+}
+@media screen and (min-width: 760px) {
+    .page-content {
+        padding: 7rem 2rem;
+    }
+}
+/* footer */
+
+.page-footer {
+    background-color: var(--dark);
+    padding: 3rem 1rem;
+
+    * {
+        color: var(--light);
+    }
+
+    section {
+        display: var(--flex);
+        flex-direction: column;
+        gap: 0.5rem;
+        line-height: 1;
+    }
+    h2 {
+        font-size: var(--font-large);
+    }
+    h3 {
+        font-size: var(--font-regular);
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+    a {
+        font-size: var(--font-small);
+        display: block;
+        padding: 0.25rem 0;
+    }
+
+    .footer-legal {
+        align-self: flex-end;
+        font-size: var(--font-large);
+        line-height: 1.2;
+    }
+    .github-repo {
+        padding: 5rem 0.5rem 0 0.5rem;
+        text-align: center;
+    }
+
+    &-inner {
+        display: var(--flex);
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 5rem;
+    }
+}
+
+/* Shared */
+.submit-request-sign-in-buttons[aria-hidden="true"] {
+    display: none;
+}
+.submit-request-sign-in-buttons[aria-hidden="false"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: var(--dark);
+    box-shadow: var(--shadow);
+}
+@media screen and (min-width: 900px) {
+    .submit-request-sign-in-buttons[aria-hidden="false"] {
+        position: static;
+        width: auto;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+.submit-request-sign-in-buttons button {
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+}
+
+.sign-btns {
+    display: var(--flex);
+    gap: 1rem;
+    align-items: center;
+    border: 0;
+    justify-content: center;
+}
+
+.dialog-form {
+    display: var(--flex);
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+
+    > * {
+        font-size: var(--font-small);
+    }
+
+    button {
+        padding: 0.25rem 0.5rem;
+    }
+
+    &-element,
+    &-buttons {
+        display: var(--flex);
+    }
+
+    &-element {
+        flex-direction: column;
+    }
+
+    &-buttons {
+        justify-content: space-between;
+    }
+}

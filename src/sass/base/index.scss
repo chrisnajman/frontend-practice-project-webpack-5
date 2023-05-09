@@ -1,0 +1,41 @@
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: var(--font-sans);
+    font-weight: var(--fontWeight-light);
+    // font-size: var(--font-regular);
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+    font-weight: var(--fontWeight-medium);
+}
+h1 {
+    font-size: var(--font-xxx-large);
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+@media screen and (min-width: 760px) {
+    h1 {
+        margin-bottom: 3rem;
+    }
+}
+input,
+button,
+textarea {
+    border: 1px solid var(--dark);
+    border-radius: 0.2rem;
+}
+input[placeholder] {
+    font-size: var(--font-regular);
+}
+dialog {
+    padding: 0;
+    box-shadow: var(--shadow);
+    border: 0;
+    background-color: transparent;
+}

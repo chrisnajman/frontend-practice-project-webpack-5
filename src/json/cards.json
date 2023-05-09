@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "icon": "icon-network",
+    "title": "Card title #1",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est assumenda doloremque ducimus.",
+    "url": "#",
+    "urlText": "Learn more"
+
+  },
+  {
+    "id": 2,
+    "icon": "icon-group",
+    "title": "Card title #2",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, laborum tempore",
+    "url": "#",
+    "urlText": "Learn more" 
+  },
+
+    {
+    "id": 3,
+    "icon": "icon-piechart",
+    "title": "Card title #3",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora error consequuntur delectus.",
+    "url": "#",
+    "urlText": "Learn more"
+  },
+
+    {
+    "id": 4,
+    "icon": "icon-pound",
+    "title": "Card title #4",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "url": "#",
+    "urlText": "Learn more"
+  },
+
+    {
+    "id": 5,
+    "icon": "icon-key",
+    "title": "Card title #5",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit sequi.",
+    "url": "#",
+    "urlText": "Learn more"
+  },
+
+    {
+    "id": 6,
+    "icon": "icon-comment",
+    "title": "Card title #6",
+    "text": "Lorem ipsum dolor sit amet.",
+    "url": "#",
+    "urlText": "Learn more"
+  }
+
+]

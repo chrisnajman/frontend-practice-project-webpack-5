@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js">
+
+<head>
+  <link rel="preload" href="./fonts/roboto-light-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="./fonts/roboto-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dummy help page. The search box links to DuckDuckGo search results">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <title>Frontend Practice Project (Webpack 5)</title>
+</head>
+
+<body>
+  <a href="#main" class="element-invisible element-focusable skip-link">Skip to main content</a>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <div class="page-header-inner">
+        <nav class="nav-top">
+          <a href="./"><span class="sr-only">Home</span>
+            <svg role="img" class="icon-s icon-logo">
+              <use href="./svg/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <a href="#">SomeCo Ltd.</a>
+        </nav>
+        <div class="submit-request-sign-in-buttons-container">
+          <div data-mobile-nav-btn-container class="mobile-nav-btn-container" aria-hidden="false">
+            <button data-mobile-nav-btn class="mobile-nav-btn" aria-label="Open menu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <path d="M4 8 L26 8"></path>
+                <path d="M4 15 L26 15"></path>
+                <path d="M4 22 L26 22"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="submit-request-sign-in-buttons" aria-hidden="true" data-mobile-menu-items>
+            <div class="submit-request">
+              <button data-modal-open class="submit-request-btn">Submit a request</button>
+              <dialog data-modal-request aria-hidden="true" class="modal">
+                <form id="submit-request" class="dialog-form submit-request-form">
+                  <p data-card-element>All fields are required.</p>
+                  <div class="dialog-form-element" data-card-element>
+                    <label for="fullName">Name</label>
+                    <input data-sr-name id="fullName" type="text" required>
+                  </div>
+                  <div class="dialog-form-element" data-card-element>
+                    <label for="email">Email</label>
+                    <input data-sr-email id="email" type="email" required>
+                  </div>
+                  <div class="dialog-form-element" data-card-element>
+                    <label for="request">Request</label>
+                    <textarea data-sr-text id="request" required></textarea>
+                  </div>
+                  <p class="hidden success-message" aria-hidden="true" data-success-message></p>
+                  <div class="dialog-form-buttons">
+                    <button data-modal-submit>Submit</button>
+                    <button type="button" data-modal-close>Close X</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+            <div class="sign-in">
+              <button data-dialog-open class="sign-btns sign-in-btn" aria-hidden="false">
+                <span>Sign in</span>
+              </button>
+              <button data-sign-out-btn class="sign-btns sign-out-btn hidden" aria-hidden="true">
+                <span data-sign-out-btn-text></span>
+                <svg role="img" class="icon-xs">
+                  <use href="./svg/sprite.svg#icon-user"></use>
+                </svg>
+              </button>
+              <dialog data-dialog-sign-in aria-hidden="true" class="dialog">
+                <form id="sign-in" class="dialog-form sign-in-form">
+                  <div class="dialog-form-element">
+                    <label for="username">Username</label>
+                    <input data-username id="username" type="text" required>
+                  </div>
+                  <div class="dialog-form-element">
+                    <label for="password">Password</label>
+                    <input data-password id="password" type="password" required>
+                  </div>
+                  <div class="dialog-form-buttons">
+                    <button data-sign-in-submit>Sign in</button>
+                    <button type="button" data-dialog-close>Close X</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-inner">
+        <h1>Frontend Practice Project (Webpack 5)</h1>
+        <form id="search-engine" class="search-engine">
+          <label for="search" class="sr-only"><span data-search-engine-label-txt></span></label>
+          <input id="search" type="text" name="q" required>
+          <button type="submit" id="search-engine-btn">&xrarr;<span class="sr-only">Search</span></button>
+        </form>
+      </div>
+    </header>
+    <main id="main">
+      <article class="page-content">
+        <h2 class="sr-only">Site Links</h2>
+        <div class="cards-container" data-cards-container>
+          <template id="card-template">
+            <section class="card" data-card-section>
+              <svg role="img" class="icon" data-icon-type>
+                <use data-svg-url></use>
+              </svg>
+              <div class="card-inner">
+                <h3 data-card-title></h3>
+                <p data-card-text></p>
+                <a data-card-link></a>
+              </div>
+            </section>
+          </template>
+        </div>
+      </article>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer-inner">
+        <section>
+          <h2>SomeCo Ltd.</h2>
+          <ul role="list">
+            <li><a href="#">Start Free Trial</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Downloads</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Resources</h2>
+          <ul role="list">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Human Resources</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Status Reports</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Social</h2>
+          <ul role="list">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Reddit</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Organisation</h2>
+          <ul role="list">
+            <li><a href="#">Company History</a></li>
+            <li><a href="#">Vacancies</a></li>
+            <li><a href="#">Ts &amp; Cs</a></li>
+          </ul>
+          <h3>Contact</h3>
+          <p><a href="#">info@someco.com</a></p>
+        </section>
+        <section class="footer-legal">
+          <h2 class="sr-only">Legal</h2>
+          <svg role="img" class="icon-s icon-logo">
+            <use href="./svg/sprite.svg#icon-logo"></use>
+          </svg>
+          <div class="copyright">
+            <p>&copy; Copyright <span data-year></span></p>
+            <p>SomeCo Ltd.</p>
+            <p>All rights reserved</p>
+          </div>
+        </section>
+      </div>
+      <p class="github-repo">
+        <a href="https://github.com/chrisnajman/frontend-practice-project-webpack-5" target="_blank"
+          rel="noopener noreferrer">
+          GitHub Repository
+        </a>
+      </p>
+    </footer>
+  </div>
+
+
+</body>
+
+</html>

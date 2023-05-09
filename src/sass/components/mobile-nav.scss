@@ -1,0 +1,131 @@
+.mobile-nav-btn-container {
+    display: flex;
+}
+@media screen and (min-width: 900px) {
+    .mobile-nav-btn-container {
+        display: none;
+    }
+}
+.mobile-nav-btn {
+    all: unset;
+    cursor: pointer;
+    margin-left: auto;
+    width: var(--mobile-nav-btn);
+    height: var(--mobile-nav-btn);
+
+    svg {
+        stroke: white;
+        stroke-width: 2px;
+        stroke-linecap: round;
+        color: black;
+        width: var(--mobile-nav-btn);
+        height: var(--mobile-nav-btn);
+    }
+
+    /* Hamburger lines reset animation, i.e. menu closed */
+    svg path {
+        transform-origin: 50% 8px;
+        transition: stroke 0.3s ease-in-out, fill 0.3s forwards;
+    }
+    svg path:nth-of-type(1) {
+        animation: mobileNavBtnTopReset 300ms ease-in-out forwards;
+    }
+    svg path:nth-of-type(2) {
+        transform-origin: 50% 15px;
+        animation: mobileNavBtnMiddleReset 300ms ease-in-out forwards;
+    }
+    svg path:nth-of-type(3) {
+        transform-origin: 50% 22px;
+        animation: mobileNavBtnBottomReset 300ms ease-in-out forwards;
+    }
+
+    /* Hamburger turns into X, i.e. menu open */
+    &.is-open svg path:nth-of-type(1) {
+        animation: mobileNavBtnTopDeform 300ms ease-in-out forwards;
+    }
+    &.is-open svg path:nth-of-type(2) {
+        animation: mobileNavBtnMiddleDeform 300ms ease-in-out forwards;
+    }
+    &.is-open svg path:nth-of-type(3) {
+        animation: mobileNavBtnBottomDeform 300ms ease-in-out forwards;
+    }
+}
+
+@keyframes mobileNavBtnTopReset {
+    0% {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(7px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+@keyframes mobileNavBtnMiddleReset {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes mobileNavBtnBottomReset {
+    0% {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    50% {
+        transform: translateY(-7px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+@keyframes mobileNavBtnTopDeform {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(7px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(7px) rotate(45deg);
+    }
+}
+@keyframes mobileNavBtnMiddleDeform {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes mobileNavBtnBottomDeform {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-7px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}

@@ -1,0 +1,27 @@
+:root {
+    --dark: #090946;
+    --light: #fff;
+    --mid: #dadbf1;
+    --blue: #4c5fd5;
+    --silver: silver;
+    --gold: gold;
+    --magenta: #8b008b;
+    --green: #228b22;
+    --pink: #ff69b4;
+    --orange: #ff6347;
+
+    --font-sans: "Roboto", sans-serif;
+    --fontWeight-light: 300;
+    --fontWeight-medium: 400;
+    --font-small: clamp(0.875rem, 0.837rem + 0.2174vw, 1rem);
+    --font-regular: clamp(1rem, 0.9239rem + 0.4348vw, 1.25rem);
+    --font-large: clamp(1.125rem, 1.0109rem + 0.6522vw, 1.5rem);
+    --font-xxx-large: clamp(1.5rem, 1.087rem + 5.2174vw, 5rem);
+
+    --mobile-nav-btn: 3.4375rem;
+    --shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.5);
+
+    --horz-center: 0 auto;
+    --flex: flex;
+    --grid: grid;
+}

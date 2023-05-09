@@ -1,0 +1,38 @@
+.cards-container {
+    display: var(--grid);
+    gap: 4rem;
+    max-width: 92.1875rem;
+    margin: var(--horz-center);
+}
+@media screen and (min-width: 800px) {
+    .cards-container {
+        gap: 6rem;
+        grid: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .cards-container {
+        gap: 8rem;
+    }
+}
+.card {
+    display: var(--flex);
+    gap: 1rem;
+    font-size: var(--font-large);
+
+    h3 {
+        font-size: var(--font-large);
+    }
+    a {
+        color: var(--blue);
+
+        &::after {
+            content: "\27F6";
+            width: 8.5rem;
+        }
+    }
+
+    &-inner {
+        width: 90%;
+    }
+}
