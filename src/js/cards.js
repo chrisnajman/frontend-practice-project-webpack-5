@@ -24,7 +24,7 @@ async function cards() {
 
         // SVG url
         const svgUrl = card.querySelector("[data-svg-url]")
-        svgUrl.setAttribute("href", `../svg/sprite.svg#${icon}`)
+        svgUrl.setAttribute("href", `/svg/sprite.svg#${icon}`)
 
         // Title
         const cardTitle = card.querySelector("[data-card-title]")
