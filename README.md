@@ -28,11 +28,16 @@ than achieving absolute fidelity to the design.
 - `template` used for individual 'cards'.
 - `dialog` element used for 'Sign in' and 'Submit request' forms.
 
-## CSS
+## SCSS
 
+- Webpack 5 uses Dart SASS. [Official documentation](https://sass-lang.com/dart-sass).
 - `flexbox` is used for the overall page layout and many of the page elements.
 - `grid` is used only for the 'cards' section.
 - Responsive.
+
+## PostCSS
+
+- This takes care of any required browser prefixes (dependent on how you configure `.browserslistrc`).
 
 ## SVGs
 
@@ -45,7 +50,7 @@ than achieving absolute fidelity to the design.
 
 ## Javascript
 
-- webpack modules
+- Webpack's version of ES6 modules
 - Transpilation to ES5
 - **Important**: paths from JavaScript to external files (.json, .svg ...) must be in the form: `./json/cards.json`. The path **must not** be relative to the JavaScript file itself: `../json/cards.json`.
   - This becomes clear when we look at the file structure of the output folder :
