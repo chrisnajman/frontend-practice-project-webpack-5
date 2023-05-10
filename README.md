@@ -1,11 +1,3 @@
-# Basic Webpack 5 Setup with SASS, Babel, PostCSS, Self-hosted fonts and SVG Sprite
-
----
-
-## permalink: /index.html
-
-[Website (Git Pages)](https://chrisnajman.github.io/frontend-practice-project-webpack-5)
-
 # Frontend Practice Project (Webpack 5)
 
 ## Description
@@ -55,6 +47,7 @@ than achieving absolute fidelity to the design.
 
 - webpack modules
 - Transpilation to ES5
+- **Important**: paths from JavaScript to external files (.json, .svg ...) must be in the form `./json/cards.json` The path **must not** be relative to the JavaScript file itself (`../json.cards.json`).
 
 ## JSON
 
@@ -98,7 +91,3 @@ See
 [clamp]: https://clamp.font-size.app/
 [frontend]: https://www.frontendpractice.com/
 [fonts]: https://github.com/chrisnajman/self-hosting-fonts
-
-## Git Pages
-
-- [Website (Git Pages)](https://chrisnajman.github.io/frontend-practice-project-webpack-5)
