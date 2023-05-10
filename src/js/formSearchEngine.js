@@ -1,3 +1,5 @@
+import setMultipleAttributes from "./utils/set-multiple-attributes"
+
 function formSearchEngine() {
   const searchEngineForm = document.getElementById("search-engine")
   const labelTxt = document.querySelector("[data-search-engine-label-txt]")
@@ -26,11 +28,4 @@ function formSearchEngine() {
   })
 }
 
-function setMultipleAttributes(element, attributesToSet) {
-  for (let i in attributesToSet) {
-    element.setAttribute(i, attributesToSet[i])
-    // i is the attribute(s)
-    // [i] is the attribute value(s)
-  }
-}
 formSearchEngine()

@@ -50,7 +50,7 @@ than achieving absolute fidelity to the design.
 
 ## Javascript
 
-- Webpack's version of ES6 modules
+- Webpack's version of ES6 modules is slightly different: `index.js`, where all files are imported, uses e.g. `import "./navMobile"`, whereas ES6 Module `script.js` would list the file as `import navMobile from "./modules/components/nav-mobile.js"`.
 - Transpilation to ES5
 - **Important**: paths from JavaScript to external files (.json, .svg ...) must be in the form: `./json/cards.json`. The path **must not** be relative to the JavaScript file itself: `../json/cards.json`.
   - This becomes clear when we look at the file structure of the output folder :
