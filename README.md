@@ -47,7 +47,7 @@ than achieving absolute fidelity to the design.
 
 - webpack modules
 - Transpilation to ES5
-- **Important**: paths from JavaScript to external files (.json, .svg ...) must be in the form `./json/cards.json` The path **must not** be relative to the JavaScript file itself (`../json.cards.json`).
+- **Important**: paths from JavaScript to external files (.json, .svg ...) must be in the form `./json/cards.json` The path **must not** be relative to the JavaScript file itself (`../json/cards.json`).
 
 ## JSON
 
